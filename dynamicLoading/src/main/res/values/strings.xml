@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerView</string>
+    <string name="find_name">请输入用例名称搜索</string>
+</resources>

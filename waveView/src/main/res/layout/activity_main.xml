@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_wave1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222222"
+        android:text="波形图1"
+        android:textColor="#555555"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#444444"
+        android:max="40"
+        android:min="1"
+        android:progress="1"
+        android:textColor="#555555"
+        tools:targetApi="o" />
+
+    <com.iflytek.audio.view.WaveView
+        android:id="@+id/wave_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="#000000"
+        app:cover_gap="1"
+        app:draw_mode="loop"
+        app:grid_line_color="#336633"
+        app:grid_visible="true"
+        app:wave_line_color="#ffff00"
+        app:wave_line_stroke_width="3"
+        app:wave_line_width="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222222"
+        android:text="波形图2"
+        android:textColor="#555555"
+        android:textSize="24sp" />
+
+    <com.iflytek.audio.view.WaveView
+        android:id="@+id/wave_view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="#000000"
+        app:draw_mode="normal"
+        app:grid_line_color="#336633"
+        app:grid_visible="true"
+        app:wave_line_color="#ff0000"
+        app:wave_line_stroke_width="2"
+        app:wave_line_width="20" />
+
+</LinearLayout>

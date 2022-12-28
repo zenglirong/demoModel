@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="accessibility_desc">需要获取屏幕控件位置信息，模拟手动点击事件</string>
+</resources>
